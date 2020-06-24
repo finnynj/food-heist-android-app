@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1078555650520",
+    "firebase_url": "https://food-heist.firebaseio.com",
+    "project_id": "food-heist",
+    "storage_bucket": "food-heist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078555650520:android:e546fe54db64792812aaad",
+        "android_client_info": {
+          "package_name": "com.example.food_heist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078555650520-rnkj8khhtfe7kotvgoq5giccdsnunle1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl3rqXXtF0dLjs2XlCRzmoGVBtgAsJ9uQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078555650520-rnkj8khhtfe7kotvgoq5giccdsnunle1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

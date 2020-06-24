@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".signup2_activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="143dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/textbox_shadow"
+            android:elevation="1dp"
+            android:src="@mipmap/logo_foreground"
+            app:srcCompat="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Sign Up"
+            android:textColor="@color/brown"
+            android:textSize="30sp"
+            android:textStyle="" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="We just need to get a few details from you"
+            android:textColor="@color/brown"
+            android:textSize="18sp"
+            android:textStyle="" />
+
+
+        <EditText
+            android:id="@+id/nuser_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/textbox_shadow"
+            android:elevation="1dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Enter Your Name"
+            android:inputType="number"
+            android:maxLength="50"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/nuser_no"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/textbox_shadow"
+            android:elevation="1dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Enter Your Number"
+            android:inputType="number"
+            android:maxLength="50"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/npassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/textbox_shadow"
+            android:elevation="1dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="New Password"
+            android:inputType="number"
+            android:maxLength="50"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cnpassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/textbox_shadow"
+            android:elevation="1dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Confirm password"
+            android:inputType="number"
+            android:maxLength="50"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/verify_button"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_btn"
+            android:text="Verify"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.496" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

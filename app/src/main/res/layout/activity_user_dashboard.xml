@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
+    <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <!-- Toolbar is the actual app bar with text and the action items -->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/swipe_btn"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleMargin="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_hamburger" />
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="128dp"
+                    android:layout_height="63dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton"
+                    app:srcCompat="@drawable/typo"
+                    tools:layout_editor_absoluteY="-7dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_scan" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox_shadow"
+                android:clipToPadding="false"
+                android:elevation="1dp">
+
+                <EditText
+                    android:id="@+id/search_bar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textbox_shadow"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Search for resturant"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="610dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="580dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:clipToPadding="false"
+                    android:foregroundGravity="center"
+                    android:overScrollMode="never"></androidx.viewpager.widget.ViewPager>
+
+                <Button
+                    android:id="@+id/btnOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/login_signup_btn"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Order Now!"
+                    android:textColor="#000" />
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

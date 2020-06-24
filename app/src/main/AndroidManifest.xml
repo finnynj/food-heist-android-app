@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.food_heist">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="Food Hiest"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".reset_password"></activity>
+        <activity android:name=".forgot_password" />
+        <activity android:name=".signup2_activity" />
+        <activity android:name=".user_dashboard" />
+        <activity android:name=".otp_verificaton" />
+        <activity android:name=".login_signup_activity" />
+        <activity android:name=".splashscreen_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensor" />
+    </application>
+</manifest>

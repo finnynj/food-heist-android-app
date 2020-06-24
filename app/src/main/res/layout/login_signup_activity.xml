@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_signup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="805dp"
+    android:background="@drawable/login_background"
+    tools:context=".login_signup_activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/login_signup_btn"
+            android:text="Login"
+            android:textColor="@color/brown"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:background="@drawable/login_signup_btn"
+            android:text="Sign Up"
+            android:textColor="@color/brown"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="@color/colorWhite"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="358dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:text="Make an order faster and easier"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
